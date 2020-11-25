@@ -2,7 +2,7 @@
 package usuario;
 import javax.swing.JOptionPane;
 
-public class Usuario {
+public class Usuariocontraseña {
 
     public static void main(String[] args) {
       String usuario="rocio";
