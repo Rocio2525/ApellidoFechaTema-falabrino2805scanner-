@@ -1,12 +1,15 @@
 
 package calculadora2;
+import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Calculadora2 {
 
     
     public static void main(String[] args) {
-        int operacion;
+        //PUNTO A
+            String nombre="";
+               int operacion;
         double a, b, resultado;
         do {
             a = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de a"));
@@ -27,7 +30,24 @@ public class Calculadora2 {
                 " resultado: " + resultado);
         } while (JOptionPane.showConfirmDialog(null, "¿Desea repetir el proceso?",
             null, JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE)==JOptionPane.YES_OPTION);
+    //PUNTO B
+   nombre= JOptionPane.showInputDialog("Por favor Ingrese Nombre del Estudiante:  ");
+       int puntos;
+  puntos=Integer.parseInt(JOptionPane.showInputDialog(null, "ingrese el puntaje"));        
+  if (puntos>500){
+       
+        JOptionPane.showMessageDialog(null, " El estudiante si ingreso   ");
+    }else{
+      JOptionPane.showMessageDialog(null, "El estudiante no ingreso  " );
     }
+    
     }
+
+}
+    
+    
+
+    
+    
     
 
